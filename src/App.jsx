@@ -18,7 +18,7 @@ import ProtectedRoutes from "./pages/ProtectedRoutes";
 import { lazy, Suspense } from "react";
 import SpinnerFullPage from "./components/SpinnerFullPage";
 
-const HomePage = lazy(() => import("./pages/HomePage"));
+const HomePage = lazy(() => import("./pages/Homepage"));
 const Product = lazy(() => import("./pages/Product"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const Login = lazy(() => import("./components/Login"));

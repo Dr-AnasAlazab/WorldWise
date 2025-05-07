@@ -3,7 +3,9 @@ import { createContext, useEffect, useContext, useReducer } from "react";
 
 const CitiesContext = createContext();
 
-const BASE_URL = "http://localhost:8000";
+const BASE_URL = `https://${
+  import.meta.env.VITE_MOCKAPI_SECRET
+}.mockapi.io/data`;
 
 const initialStates = {
   cities: [],
